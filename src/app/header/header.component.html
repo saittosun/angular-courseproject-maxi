@@ -5,20 +5,23 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active" routerLinkActive="active">
-        <!-- (click)="onSelect('recipe')" -->
-        <!-- href="#" -->
+      <!-- <li class="nav-item active" routerLinkActive="active">
         <a
+          (click)="onSelect('recipe')"
+          href="#"
           class="nav-link"
           routerLink="/recipe"
           >Recipes</a>
       </li>
-      <!-- (click)="onSelect('shopping-list')" -->
       <li class="nav-item" routerLinkActive="active">
         <a
           class="nav-link"
-          routerLink="/shopping-list">Shopping List</a>
-      </li>
+          (click)="onSelect('shopping-list')"
+          routerLink="/shopping-list"
+          >Shopping List</a>
+      </li> -->
+      <li><a href="#" (click)="onSelect('recipe')">Recipes</a></li>
+      <li><a href="#" (click)="onSelect('shopping list')">Shopping List</a></li>
     </ul>
     <ul class="navbar-nav">
       <li
